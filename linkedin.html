@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deep Chand | Product & Program Manager</title>
+<meta name="description" content="Portfolio of Deep Chand, Product and Program Manager with 10+ years of experience across investment management, fund accounting, AIF/PMS platforms and institutional financial services.">
+<style>
+:root{
+  --bg:#f7f8fb; --surface:#fff; --text:#121826; --muted:#667085;
+  --line:#e7eaf0; --accent:#2874f0; --accent2:#165dcc; --dark:#0d1728;
+  --max:1160px; --radius:22px; --shadow:0 18px 50px rgba(15,23,42,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(247,248,251,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(231,234,240,.8)}
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:20px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:28px;font-size:14px;color:#475467}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{padding:10px 17px;background:var(--dark);color:#fff;border-radius:999px;font-size:14px;font-weight:700}
+.hero{padding:92px 0 72px;background:linear-gradient(180deg,#fff 0%,#f7f8fb 100%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:18px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+h1{font-size:clamp(44px,6vw,78px);line-height:1.02;letter-spacing:-.065em;max-width:800px}
+.hero h1 span{color:var(--accent)}
+.hero-copy{font-size:19px;color:var(--muted);max-width:690px;margin:24px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:750;font-size:14px}
+.btn-primary{background:var(--accent);color:white;box-shadow:0 8px 22px rgba(40,116,240,.22)}
+.btn-secondary{background:white;border:1px solid var(--line)}
+.hero-card{background:var(--dark);color:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;right:-75px;top:-75px;background:rgba(40,116,240,.3)}
+.initials{width:66px;height:66px;border-radius:18px;display:grid;place-items:center;background:var(--accent);font-size:24px;font-weight:900;margin-bottom:26px}
+.hero-card h2{font-size:27px;line-height:1.15;margin-bottom:8px}
+.hero-card p{color:#b8c2d3;font-size:14px}
+.meta{margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);display:grid;gap:15px}
+.meta div{display:flex;justify-content:space-between;gap:15px;font-size:13px}
+.meta span:first-child{color:#8290a6}.meta span:last-child{text-align:right}
+section{padding:88px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;color:var(--accent);margin-bottom:8px}
+h2.section-title{font-size:clamp(30px,4vw,46px);letter-spacing:-.045em;line-height:1.1}
+.section-desc{max-width:500px;color:var(--muted);font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}
+.stat strong{font-size:34px;letter-spacing:-.04em;display:block}
+.stat p{color:var(--muted);font-size:13px;margin-top:4px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 15px;font-size:13px;font-weight:700}
+.timeline{position:relative;margin-top:20px}
+.timeline:before{content:"";position:absolute;left:10px;top:5px;bottom:5px;width:2px;background:#dfe4ec}
+.job{position:relative;padding-left:45px;margin-bottom:35px}
+.job:last-child{margin-bottom:0}
+.job:before{content:"";position:absolute;left:3px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px var(--bg)}
+.job-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}
+.job-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.job h3{font-size:21px;letter-spacing:-.025em}
+.company{color:var(--accent);font-weight:800;font-size:14px;margin-top:3px}
+.period{font-size:12px;color:var(--muted);white-space:nowrap;background:#f2f4f7;padding:7px 10px;border-radius:999px}
+.job ul{margin:17px 0 0 18px;color:#475467;font-size:14px}
+.job li{margin:7px 0;padding-left:4px}
+.feature{background:var(--dark);color:#fff;border-radius:28px;padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.feature .kicker{color:#72a7ff}
+.feature h2{font-size:42px;line-height:1.1;letter-spacing:-.05em}
+.feature p{color:#b8c2d3;margin-top:15px}
+.feature-list{display:grid;gap:12px}
+.feature-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:17px;border-radius:15px;font-size:14px}
+.contact{background:#fff;border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.contact h2{font-size:46px;line-height:1.08;letter-spacing:-.05em}
+.contact p{color:var(--muted);margin-top:14px}
+.contact-links{display:grid;gap:12px}
+.contact-link{padding:17px 18px;border:1px solid var(--line);border-radius:15px;background:var(--bg);font-size:14px}
+.contact-link small{display:block;color:var(--muted);margin-bottom:3px}
+footer{padding:28px 0;color:#98a2b3;font-size:12px;text-align:center}
+@media(max-width:800px){
+  .nav-links{display:none}.hero{padding-top:60px}.hero-grid,.feature,.contact-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}section{padding:65px 0}.section-head{display:block}
+  .section-desc{margin-top:12px}.feature h2,.contact h2{font-size:36px}.job-top{display:block}.period{display:inline-block;margin-top:10px}
+}
+@media(max-width:500px){
+  .container{width:min(var(--max),calc(100% - 28px))}h1{font-size:46px}.stats{grid-template-columns:1fr 1fr}
+  .hero-card,.feature{padding:25px}.nav-cta{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">Deep<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="#contact">Let's connect</a>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow"><i class="dot"></i> Product & Program Management</div>
+        <h1>Turning complex operations into <span>better products.</span></h1>
+        <p class="hero-copy">
+          Product and Program Manager with 10+ years of experience delivering technology
+          and operations solutions across investment management, fund accounting,
+          AIF/PMS platforms and institutional financial services.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#experience">View experience →</a>
+          <a class="btn btn-secondary" href="mailto:deepsharma619@gmail.com">Email me</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="initials">DC</div>
+        <h2>Deep Chand</h2>
+        <p>Program Manager at KFintech Pvt. Ltd.</p>
+        <div class="meta">
+          <div><span>Based in</span><span>Hyderabad, India</span></div>
+          <div><span>Experience</span><span>10+ years</span></div>
+          <div><span>Focus</span><span>Product · Programs · Agile</span></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker">At a glance</div><h2 class="section-title">Experience that connects<br>business, technology & operations.</h2></div>
+        <p class="section-desc">A career built around financial services, fund operations, product enhancements, workflow automation and cross-functional delivery.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>10+</strong><p>Years of professional experience</p></div>
+        <div class="stat"><strong>165+</strong><p>AIFs supported through product enhancements</p></div>
+        <div class="stat"><strong>75%</strong><p>Processing-time reduction through automation</p></div>
+        <div class="stat"><strong>10</strong><p>Team members managed at HCL BPO</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker">Core strengths</div><h2 class="section-title">What I bring to the table.</h2></div>
+      </div>
+      <div class="skills">
+        <span class="skill">People Management</span><span class="skill">Project Management</span>
+        <span class="skill">Program Management</span><span class="skill">Coordination of Projects</span>
+        <span class="skill">Requirements & BRDs</span><span class="skill">Agile Delivery</span>
+        <span class="skill">Digital Product Enhancements</span><span class="skill">Workflow Automation</span>
+        <span class="skill">Client Demos</span><span class="skill">Stakeholder Management</span>
+        <span class="skill">NAV Operations</span><span class="skill">Fee Calculations</span>
+        <span class="skill">Reconciliation</span><span class="skill">Fund Accounting</span>
+        <span class="skill">AIF / PMS Platforms</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <div><div class="kicker">Career journey</div><h2 class="section-title">Experience</h2></div>
+        <p class="section-desc">Progressing from fund accounting and operations into program and product leadership.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Program Manager</h3><div class="company">KFin Technologies Ltd.</div></div><div class="period">Aug 2022 — Present</div></div>
+            <ul>
+              <li>Led product enhancements for 165+ AIFs and authored business requirements documents.</li>
+              <li>Managed Agile delivery, client demos and cross-functional collaboration.</li>
+              <li>Delivered workflow automation that reduced processing time by 75%.</li>
+              <li>Partnered with engineering and business teams to define requirements and deliver digital products.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Assistant Manager</h3><div class="company">State Street Corporation</div></div><div class="period">May 2020 — Aug 2022</div></div>
+            <ul>
+              <li>Processed capital stock activities, expense accruals and NAV calculations for daily and monthly funds.</li>
+              <li>Managed cash and stock reconciliations and resolved income discrepancies.</li>
+              <li>Handled securities transactions, income and dividends; verified security prices via Bloomberg.</li>
+              <li>Prepared NAV packages, distribution calculations, audit support and financial statements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Senior Associate</h3><div class="company">CSE Limited</div></div><div class="period">Dec 2018 — May 2020</div></div>
+            <ul>
+              <li>Delivered quarterly and annual financial statements and monthly NAV analysis.</li>
+              <li>Managed daily cash reconciliations and transaction, distribution and entity reconciliations.</li>
+              <li>Calculated management and incentive fees and prepared partners’ capital statements.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Team Leader</h3><div class="company">State Street Corporation</div></div><div class="period">May 2018 — Dec 2018</div></div>
+            <ul>
+              <li>Delivered financial statements and NAV calculations for multiple private-equity Fund of Funds.</li>
+              <li>Reconciled commitments and calculated management fees and carry waterfalls.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Assistant Manager</h3><div class="company">Karvy Computershare</div></div><div class="period">Aug 2016 — May 2018</div></div>
+            <ul>
+              <li>Reviewed and accounted for corporate actions including stock splits, dividends and rights issues.</li>
+              <li>Monitored investment guidelines and reported regulatory breaches.</li>
+              <li>Calculated and reviewed NAV, financial statements, fund performance and fees.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>Specialist</h3><div class="company">HCL BPO</div></div><div class="period">Mar 2015 — Aug 2016</div></div>
+            <ul><li>Worked as Acting Team Lead, handling reviews and processing; managed a team of 10 members and focused on timely fund completion.</li></ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-card">
+            <div class="job-top"><div><h3>NAV Analysis Analyst</h3><div class="company">Franklin Templeton India</div></div><div class="period">Feb 2011 — Feb 2015</div></div>
+            <ul><li>Worked as a fund accountant reviewing and processing funds and ensuring accurate NAV release.</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="feature">
+        <div>
+          <div class="kicker">Signature impact</div>
+          <h2>From fund operations to product transformation.</h2>
+          <p>Combining domain depth in investment operations with product thinking, Agile delivery and automation to solve operational problems at scale.</p>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item"><strong>01 · Product</strong><br>Define requirements and drive product enhancements.</div>
+          <div class="feature-item"><strong>02 · Delivery</strong><br>Lead Agile programs across engineering and business teams.</div>
+          <div class="feature-item"><strong>03 · Operations</strong><br>Deep understanding of NAV, fees, reconciliation and fund accounting.</div>
+          <div class="feature-item"><strong>04 · Leadership</strong><br>Coordinate stakeholders, teams and client-facing delivery.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="kicker">Get in touch</div>
+        <h2>Let's build something that makes complex work simpler.</h2>
+        <p>For professional opportunities, product/program conversations or collaboration, feel free to connect.</p>
+      </div>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:deepsharma619@gmail.com"><small>Email</small>deepsharma619@gmail.com</a>
+        <a class="contact-link" href="tel:9989645001"><small>Phone</small>9989645001</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/deep-chand-a8266b95" target="_blank" rel="noopener"><small>LinkedIn</small>Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Deep Chand · Product & Program Management</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
